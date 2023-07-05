@@ -1,8 +1,6 @@
-# WSL-2: Der Warp-Antrieb für Windows-Entwickler:innen 
+# WSL-2: Der Warp-Antrieb für Windows-Entwickler:innen
 
-## Minimum Requirement
-
-The Windows update with the version: _KB5004296_ must be installed for this guide.
+The Windows update with the version: _KB5004296_ must be installed for this guide. (Minimum Requirement)
 
 ---
 
