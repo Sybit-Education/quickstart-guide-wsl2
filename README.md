@@ -12,27 +12,11 @@ Open Windows Commandline with administrative privileges, and run the following:
 wsl --install
 ```
 
-Reboot your system
+This command activates the features required to run WSL and installs the Ubuntu distribution of Linux
 
 ---
 
-## Update your WSL-2
-
-Open Windows Commandline with administrative privileges, and run the following:
-
-```shell
-wsl --update
-```
-
----
-
-## Installing and configure Ubuntu
-
-Open Windows Commandline with administrative privileges again, and run the following:
-
-```shell
-wsl --install -d Ubuntu
-```
+## Configure your WSL-2
 
 After the installation:
 
@@ -163,4 +147,14 @@ Run the command to see the list of available versions:
 
 ```shell
 sudo update-alternatives --config java
+```
+
+--- 
+
+### Update your WSL-2
+
+Open Windows Commandline with administrative privileges, and run the following:
+
+```shell
+wsl --update
 ```
