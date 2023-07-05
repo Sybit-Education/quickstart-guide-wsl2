@@ -16,6 +16,16 @@ Reboot your system
 
 ---
 
+## Update your WSL-2
+
+Open Windows Commandline with administrative privileges, and run the following:
+
+```shell
+wsl --update
+```
+
+---
+
 ## Installing and configure Ubuntu
 
 Open Windows Commandline with administrative privileges again, and run the following:
@@ -115,7 +125,7 @@ git config --global user.email "Max.Mustermann@CompanyDomain.de"
 
 ---
 
-## Useful Tipps
+## Useful tips
 
 Copy files from Windows directly into the WSL:
 
