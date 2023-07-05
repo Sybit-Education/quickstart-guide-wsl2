@@ -52,6 +52,11 @@ Hide last login time:
 touch .hushlogin
 ```
 
+Install Unzip:
+```shell
+sudo apt-get install unzip zip
+```
+
 ---
 
 ### Install Java (SDKMAN with SapMachine17)
