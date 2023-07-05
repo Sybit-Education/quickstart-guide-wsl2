@@ -1,27 +1,24 @@
-## WSL-2: Der Warp-Antrieb für Windows-Entwickler:innen
+# WSL-2: Der Warp-Antrieb für Windows-Entwickler:innen 
 
-### Unter Windows entwickeln und in Unix kompilieren
-
-
-### Minimum Requirement
+## Minimum Requirement
 
 The Windows update with the version: _KB5004296_ must be installed for this guide.
 
 ---
 
-### Installing the WSL-2 under Windows 10/11
+## Installing the WSL-2 under Windows 10/11
 
 Open Windows Commandline with administrative privileges, and run the following:
 
 ```shell
-wsl.exe --install
+wsl --install
 ```
 
 Reboot your system
 
 ---
 
-### Installing and configure Ubuntu
+## Installing and configure Ubuntu
 
 Open Windows Commandline with administrative privileges again, and run the following:
 
@@ -35,7 +32,7 @@ After the installation:
 - As UNIX username i recommend your company abbreviation
 - Set a secure password
 
-Update your Distribution:
+Update your distribution:
 
 ```shell
 sudo apt-get update
@@ -85,24 +82,18 @@ sdk install java 17.0.2-sapmchn
 Download and install SDKMAN:
 
 ```shell
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
-Next, open a new terminal or enter:
+Enter to complete:
 ```shell
-source ~/.bashrc
+source "$HOME/.nvm/nvm.sh"
 ```
 
-Available versions
+Install Latest Node.js Version:
 
 ```shell
-nvm list-remote
-```
-
-Install wished version from list
-
-```shell
-nvm install xx.x.x
+ nvm install --lts
 ```
 
 ---
@@ -121,9 +112,9 @@ git config --global user.email "Max.Mustermann@CompanyDomain.de"
 
 ---
 
-### Useful Tricks
+## Useful Tipps
 
-Copy files from Windows into the WSL:
+Copy files from Windows directly into the WSL:
 
 ```shell
 cp -R /mnt/c/Users/Username/pathFromWindows ~/wishedWSLDestination
@@ -149,4 +140,14 @@ Run the command to set your new default:
 
 ```shell
 nvm alias default xx.x.x
+```
+
+---
+
+### Change your Java Version
+
+Run the command to see the list of available versions:
+
+```shell
+sudo update-alternatives --config java
 ```
