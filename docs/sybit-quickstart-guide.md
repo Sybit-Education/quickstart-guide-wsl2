@@ -1,6 +1,9 @@
 # Sybit Quick Start Guide
 
-The Windows update with the version: _KB5004296_ must be installed for this guide. (Minimum Requirement)
+
+## Requirements
+
+[You must be running Windows 10, version 2004 and later (build 19041 and later), or Windows 11 to use the following commands. If you are using earlier versions, see the information on the manual installation page.](https://learn.microsoft.com/de-de/windows/wsl/install-manual)
 
 ---
 
@@ -76,7 +79,7 @@ sdk install java 17.0.2-sapmchn
 
 ### Install Node.js (NVM with Latest LTS Version)
 
-Download and install SDKMAN:
+Download and install [NVM](https://github.com/nvm-sh/nvm):
 
 ```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
