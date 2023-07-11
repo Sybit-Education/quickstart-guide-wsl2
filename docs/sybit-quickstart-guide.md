@@ -7,7 +7,7 @@
 
 ---
 
-## Installing the WSL-2 under Windows 10/11
+## Installing the WSL-2
 
 Open Windows Commandline with administrative privileges, and run the following:
 
@@ -56,7 +56,7 @@ sudo apt-get install unzip zip
 
 ---
 
-### Install Java (SDKMAN with SapMachine17)
+### Install Java (SDKMAN with OpenJDK)
 
 Download and install [SDKMAN](https://sdkman.io/):
 
@@ -69,10 +69,10 @@ Next, open a new terminal or enter:
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
-Install SapMachine17:
+Install OpenJDK:
 
 ```shell
-sdk install java 17.0.2-sapmchn
+sdk install java 20.0.1-open
 ```
 
 ---
@@ -114,7 +114,31 @@ git config --global user.email "Max.Mustermann@CompanyDomain.de"
 
 ## Useful tips
 
-Copy files from Windows directly into the WSL:
+### Make your life easier with aliases
+
+Enter following command in your commandline:
+
+```shell
+nano .bashrc
+```
+
+Copy, paste and save the following lines:
+
+```shell
+alias update="sudo apt update && sudo apt -y upgrade"
+alias build="sh gradlew build"
+alias cleanBuild="sh gradlew clean build"
+```
+
+Enter following command in your commandline or open a new tab:
+
+```shell
+source .bashrc
+```
+
+---
+
+### Copy files from Windows directly into the WSL:
 
 ```shell
 cp -R /mnt/c/Users/Username/pathFromWindows ~/wishedWSLDestination
