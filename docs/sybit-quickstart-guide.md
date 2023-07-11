@@ -1,4 +1,4 @@
-# WSL-2: Der Warp-Antrieb für Windows-Entwickler:innen
+# Sybit Quick Start Guide
 
 The Windows update with the version: _KB5004296_ must be installed for this guide. (Minimum Requirement)
 

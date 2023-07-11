@@ -1,4 +1,4 @@
-# Adding the sy_proxy tool
+# Sybit Proxy Tool
 
 Some people responded, that the file had wrong line endings. 
 If you also get the error, you can fix that issue by the following command inside your WSL

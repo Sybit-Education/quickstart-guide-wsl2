@@ -1,4 +1,4 @@
-# Intellij IDEA Ultimate
+# Sybit Intellij IDEA Ultimate Guide
 
 [Install the JetBrains Toolbox for the latest version](https://www.jetbrains.com/de-de/toolbox-app/) and easy updating in the future. 
 
