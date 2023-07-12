@@ -72,7 +72,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 Install OpenJDK:
 
 ```shell
-sdk install java 20.0.1-open
+sdk install java 11.0.19-ms
 ```
 
 ---
