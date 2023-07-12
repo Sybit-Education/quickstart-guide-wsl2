@@ -1,5 +1,14 @@
 # Sybit Proxy Tool
 
+First of all Save the [Script](/scripts/sybit_proxy.sh) to your home directory
+
+Add in the "TBD" field your specific proxy host and port:
+
+```shell
+PROXY_HOST="TBD"
+PROXY_PORT="TBD"
+```
+
 Some people responded, that the file had wrong line endings. 
 If you also get the error, you can fix that issue by the following command inside your WSL
 
